@@ -1,0 +1,204 @@
+.fondamento-regular {
+    font-family: "Fondamento";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.fondamento-regular-italic {
+    font-family: "Fondamento", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+h1, h2, h3, h4, h5 {
+    color: #4B4237;
+    text-align: center;
+    font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+p {
+    font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+li {
+  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+#logo {
+  max-width: 50px;
+  scale: 100%;
+}
+
+#button-paragraph-intro {
+  text-align: center;
+  color: goldenrod;
+}
+
+.button {
+  display: block; /* Make the button a block element */
+  margin: 0 auto; /* Center align horizontally */
+  padding: 10px 20px;
+  background-color: maroon;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+
+.button:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+
+
+
+.main-body {
+    background-color: white;
+    color: #221811;
+    font-family: sans-serif;
+  }  
+
+  .div-container-fluid {
+    margin: 0;
+  }
+
+main {
+  background-image: url('images/dndwallpaper.jpeg');
+  background-attachment: fixed;
+}
+
+.main-div {
+  width: 80%;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: inset;
+}
+
+
+
+
+
+
+
+
+/*Navigation Bar*/
+nav {
+    top: 0;
+    position: sticky;
+    border-bottom: 2px solid #C0C0C0; /* Adjust color and thickness as desired */
+    margin-bottom: 0; /* Ensure no extra space below the nav */
+    padding-bottom: 0; /* Adjust padding to control space within the nav */
+    font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+  }
+
+#not-active {
+  color: rgb(173, 173, 173);
+  background-color: rgb(255, 255, 255)
+}
+
+
+nav::after {
+    content: ''; /* Required for the pseudo-element to work */
+    display: block;
+    height: 2px; /* Thickness of the line */
+    background: linear-gradient(to right, #C0C0C0, #FFD700); /* Example: a gradient line */
+    }
+
+
+
+nav ul {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    display: flex; /* Makes items horizontal */
+  }
+  
+  nav li {
+    float: left;
+  }
+
+  
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: white; /* Sets the background color of the links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  nav li a:hover {
+    background-color: #C0C0C0; /* Changes color when hovered */
+    color: black;
+  }
+
+  .nav-div {
+    background: linear-gradient(to right, #C0C0C0, white); /* Creates a gradient from silver to white */
+  }
+
+  #database-button {
+    color: white;
+    background-color: maroon;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  #database-button:hover {
+    background-color: royalblue;
+  }
+  
+  
+/*Main content*/
+#wrapper {
+  width: 80%;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: inset;
+  padding: 5%;
+}
+  
+/*Footer*/
+footer {
+  background-color: rgb(67, 73, 93);
+  color: rgb(202, 202, 202);
+  padding: 2%;
+}
+
+#instagram-icon {
+  scale: 60%;
+}
+
+#twitter-icon {
+  scale: 100%;
+}
+
+.column {
+  flex: 33%; /* Each column takes up one-third of the container width */
+  padding: 10px; /* Optional: Adjusts spacing between columns */
+}
+
+#footer-end {
+  background-color: rgb(46, 51, 66);
+  text-align: center;
+}
+
+#footer-end p {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+  
+
+/* Mystic Silver - #C0C0C0 - Neutral and versatile, representing the balance between good and evil, and the mystical artifacts often found in D&D.
+Ethereal Fog - #677B8E - A soft, muted blue-gray that evokes mystery and the unknown paths between worlds.
+Twilight Amethyst - #9B5FC0 - A deeper purple that suggests magic and the presence of the arcane, suitable for both benevolent and malevolent forces.
+Dusk Rose - #8C415F - A muted, deep rose to represent the complexity of characters and gods, hinting at stories of love, betrayal, and redemption.
+Ancient Earth - #4B4237 - A rich, dark brown that grounds the palette, symbolizing the ancient lands where gods and mortals tread. */
