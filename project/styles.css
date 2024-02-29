@@ -10,94 +10,35 @@
     font-style: italic;
   }
 
-h1, h2, h3, h4, h5 {
-    color: #4B4237;
-    text-align: center;
-    font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+
+  
+
+
+.main-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
-p {
-    font-family: 'Fondamento', cursive; /* Use the Fondamento font */
-}
-
-li {
-  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
-}
-
-#logo {
-  max-width: 50px;
-  scale: 100%;
-}
-
-#button-paragraph-intro {
-  text-align: center;
-  color: goldenrod;
-}
-
-.button {
-  display: block; /* Make the button a block element */
-  margin: 0 auto; /* Center align horizontally */
-  padding: 10px 20px;
-  background-color: maroon;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
-}
-
-
-.button:hover {
-  background-color: royalblue;
-  color: white;
-}
-
-
-
-
-.main-body {
-    background-color: white;
-    color: #221811;
-    font-family: sans-serif;
-  }  
-
-  .div-container-fluid {
-    margin: 0;
-  }
-
-main {
-  background-image: url('images/dndwallpaper.jpeg');
-  background-attachment: fixed;
-}
-
-.main-div {
-  width: 80%;
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: inset;
-}
-
-
-
-
 
 
 
 
 /*Navigation Bar*/
+
+
+
+
 nav {
-    top: 0;
-    position: sticky;
-    border-bottom: 2px solid #C0C0C0; /* Adjust color and thickness as desired */
-    margin-bottom: 0; /* Ensure no extra space below the nav */
-    padding-bottom: 0; /* Adjust padding to control space within the nav */
-    font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+  font-size: clamp(10px, 2vw, 18px);
+  top: 0;
+  position: sticky;
+  border-bottom: 2px solid #C0C0C0; /* Adjust color and thickness as desired */
+  margin-bottom: 0; /* Ensure no extra space below the nav */
+  padding-bottom: 0; /* Adjust padding to control space within the nav */
+  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+  z-index: 2;
   }
 
-#not-active {
+.not-active {
   color: rgb(173, 173, 173);
   background-color: rgb(255, 255, 255)
 }
@@ -113,12 +54,12 @@ nav::after {
 
 
 nav ul {
-    background-color: white;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 0px;
-    display: flex; /* Makes items horizontal */
+  background-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0px;
+  display: flex;
   }
   
   nav li {
@@ -127,45 +68,222 @@ nav ul {
 
   
   nav li a {
+    text-align: center;
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: clamp(3px, 2vw, 14px);
     text-decoration: none;
     background-color: white; /* Sets the background color of the links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    height: 100%;
+  }
+
+    .database-button {
+    color: white;
+    padding: clamp(3px, 2vw, 14px);
+    background-color: maroon;
     transition: background-color 0.3s; /* Smooth transition for hover effect */
   }
   
   nav li a:hover {
     background-color: #C0C0C0; /* Changes color when hovered */
-    color: black;
+    color: white;
   }
 
   .nav-div {
     background: linear-gradient(to right, #C0C0C0, white); /* Creates a gradient from silver to white */
   }
 
-  #database-button {
-    color: white;
-    background-color: maroon;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-  }
 
-  #database-button:hover {
+
+  .database-button:hover {
     background-color: royalblue;
   }
   
   
+
+
+/*SEARCH BAR*/
+.search-container {
+  font-size: clamp(10px, 2vw, 18px);
+  background-color: white;
+  position: sticky;
+  margin-bottom: 0; /* Ensure no extra space below the nav */
+  padding-bottom: 0; /* Adjust padding to control space within the nav */
+  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+  z-index: 2;
+  border: none; /* Removes borders */
+  outline: none; /* Removes outlines */
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content (if needed) */
+}
+
+
 /*Main content*/
-#wrapper {
-  width: 80%;
+.wrapper {
+  width: 80vw; /* Start with a base width that adjusts with the viewport */
+  max-width: 100%; /* Ensure it doesn't exceed 100% of the viewport width */
   background-color: white;
   margin-right: auto;
   margin-left: auto;
   box-shadow: inset;
-  padding: 5%;
+  padding: 10px;
+  transition: width 0.2s linear; /* Smooth transition for the width change */
 }
+
+h1, h2, h3, h4, h5, a {
+  color: #4B4237;
+  text-align: center;
+  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+p {
+  font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+li {
+font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+.logo {
+max-width: 50px;
+scale: 100%;
+}
+
+.button-paragraph-intro {
+text-align: center;
+color: goldenrod;
+}
+
+.button {
+display: block; /* Make the button a block element */
+margin: 0 auto; /* Center align horizontally */
+padding: 10px 20px;
+background-color: maroon;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+text-decoration: none;
+text-align: center;
+font-family: 'Fondamento', cursive; /* Use the Fondamento font */
+}
+
+.button:hover {
+background-color: royalblue;
+color: white;
+}
+
+.main-body {
+  background-color: white;
+  color: #221811;
+  font-family: sans-serif;
+}  
+
+.div-container-fluid {
+  margin: 0;
+}
+
+main {
+background-image: url('images/dndwallpaper.jpeg');
+background-attachment: fixed;
+}
+
+.main-div {
+width: 80%;
+background-color: white;
+margin-right: auto;
+margin-left: auto;
+box-shadow: inset;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 700px) {
+
+    .row {
+    flex-direction: column; /* Stacks the .column divs vertically */
+  }
   
+  .wrapper {
+    width: 100%; /* Change width from 80% to 100% */
+  }
+}
+
+
+
+
+/*Database styling*/
+.deity-entry {
+  background-color: lightgray;
+  border-radius: 25px;
+  padding: 4%;
+  margin-bottom: 10px;
+}
+
+.deity-entry a {
+  display: block; /* Ensures the <a> elements take up the full width */
+  text-align: center; /* Centers the text within the <a> elements */
+  text-decoration: underline; /* Keeps the underline style */
+}
+
+
+
+/* HR Styling */
+
+
+
+/* Style for the hr element */
+.deity-entry-hr {
+  position: relative; /* Positioning for pseudo-elements */
+  border: none; /* Remove default border */
+  height: 3px; /* Set height of the line */
+  background: linear-gradient(to right, #ffd700, #8b0000); /* Apply gradient background */
+  border-radius: 10px; /* Add border radius to create curve */
+  box-shadow: 
+    0 0 10px 5px rgba(255, 215, 0, 0.5), /* Glow effect for celestial gold color */
+    0 0 10px 5px rgba(139, 0, 0, 0.5); /* Glow effect for purple evil color */
+  margin: 0px 0; /* Add margin for spacing */
+  animation: fancyPulse 2s ease-in-out infinite alternate; /* Add animation for pulsating effect */
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2%;
+  z-index: 1; /* Ensure the HR is behind other elements */
+}
+
+/* Decorative pseudo-elements */
+
+/* Style for the pseudo-elements */
+.deity-entry-hr::before, .deity-entry-hr::after {
+  content: ''; /* Add content for pseudo-elements */
+  position: absolute; /* Positioning for pseudo-elements */
+  top: -10px; /* Adjust vertical position */
+  width: 20px; /* Adjust width */
+  height: 20px; /* Adjust height */
+  border-radius: 50%; /* Make the shape circular */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Style for the after pseudo-element */
+.deity-entry-hr::after {
+  left: 100%; /* Position the after pseudo-element to the right */
+}
+
+/* Animation for pulsating effect */
+
+/* Define a keyframe animation */
+@keyframes fancyPulse {
+  0% { transform: scale(1); } /* Initial state: no scaling */
+  100% { transform: scale(1.1); } /* Final state: slightly scaled up */
+}
+
+
+
+
+
+
+
 /*Footer*/
 footer {
   background-color: rgb(67, 73, 93);
@@ -173,26 +291,37 @@ footer {
   padding: 2%;
 }
 
-#instagram-icon {
+.instagram-icon {
   scale: 60%;
 }
 
-#twitter-icon {
+.twitter-icon {
   scale: 100%;
 }
 
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allows flex items to wrap as needed */
+}
+
 .column {
-  flex: 33%; /* Each column takes up one-third of the container width */
+  flex: 50%; /* Each column takes up one-third of the container width */
   padding: 10px; /* Optional: Adjusts spacing between columns */
 }
 
-#footer-end {
+.footer-end {
   background-color: rgb(46, 51, 66);
   text-align: center;
 }
 
-#footer-end p {
+.footer-end p {
   font-family:Arial, Helvetica, sans-serif;
+}
+
+
+footer h4 {
+  color: white;
 }
 
   
